@@ -258,9 +258,9 @@
 .students {
   text-align: center;
   color: #18a84a;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
   font-style: italic;
-  font-weight: 600;
+  font-weight: 400;
 }
 
     .reviews-badge {
@@ -558,7 +558,7 @@
       border: none;
       font-weight: 100;
       cursor: pointer;
-      font-size: 0.3rem;
+      font-size: 0.1rem;
       display: inline-flex;
       align-items: center;
       gap: 8px;
@@ -570,16 +570,15 @@
     }
 
     .btn-ver-todos i {
-      font-size: 0.7rem;
+      font-size: 0.5rem;
       background-color: #18a84a;
       color: white;
       border-radius: 50%;
-      width: 18px;
-  height: 18px;
+      width: 15px;
+  height: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5px;
       
     }
 
@@ -1515,7 +1514,7 @@
 /* Estrellas */
 .stars {
   color: #ffc107;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 10px;
 }
 
@@ -1550,7 +1549,7 @@
   color: #20b46a;
   font-weight: 600;
   font-style: italic;
-  font-size: 16px;
+  font-size: 12px;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -1564,7 +1563,7 @@
 }
 
 .btn-ver-todos i {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 /* === BOTÓN REGISTRO (como ya lo tienes) === */
