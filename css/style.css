@@ -277,8 +277,8 @@
 
 .verified-icon {
   position: relative;
-  width: 13px;
-  height: 13px;
+  width: 17.5px;
+  height: 17.5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -286,7 +286,7 @@
 
 .verified-icon .fa-certificate {
   color: #22b573;
-  font-size: 13px;
+  font-size: 17.5px;
 }
 
 .verified-icon .fa-check {
