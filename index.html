@@ -538,20 +538,20 @@
 
       <!-- Tabs -->
       <div class="tabs-container">
-        <button class="tab active">
+        <button class="tab active" data-tab="0">
           <span class="tab-label">CLASES DE TRADING</span>
           <span class="tab-title red">EN VIVO</span>
         </button>
-        <button class="tab">
+        <button class="tab" data-tab="1">
           <span class="tab-label">ACCESO A LA SALA DE</span>
           <span class="tab-title green">TRADING</span>
         </button>
-        <button class="tab">
+        <button class="tab" data-tab="2">
           <span class="tab-label">CLASES DE TRADING</span>
           <span class="tab-title purple">EXTRA</span>
         </button>
         <button class="tab">
-          <span class="tab-label">LLAMADA SEMANAL</span>
+          <span class="tab-label" data-tab="3">LLAMADA SEMANAL</span>
           <span class="tab-title blue">¿CÓMO SER RENTABLE?</span>
         </button>
       </div>
@@ -562,14 +562,14 @@
         <!-- Izquierda: Preview -->
         <div class="content-left">
           <div class="preview-box">
-          <img src="assets/beneficios.png"/>  
+          <img src="assets/beneficios.png" id="previewImage"/>  
                     
           </div>
         </div>
 
         <!-- Derecha: Lista de beneficios -->
         <div class="content-right">
-          <ul class="benefits-list">
+          <ul class="benefits-list" id="benefitsList">
             <li>12 CLASES</li>
             <li></li>
             <li><em>ACCESO ILIMITADO</em></li>
@@ -1451,6 +1451,79 @@ Taller de Trading, solo los días que se imparta las clases del Taller de Tradin
     menuToggle.querySelector('i').classList.toggle('fa-bars');
     menuToggle.querySelector('i').classList.toggle('fa-xmark');
   });
+
+  const tabsData = [
+      {
+        image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870',
+        benefits: [
+          '12 CLASES',
+          'Acceso en directo',
+          '<em>ACCESO ILIMITADO</em>',
+          '<span class="highlight-yellow">SESIÓN DE PREGUNTAS</span>',
+          '<em>MENTORÍA PERSONALIZADA</em>',
+          '<em>ACCESO ILIMITADO</em> (2X1)'
+        ]
+      },
+      {
+        image: 'https://plus.unsplash.com/premium_photo-1683141154082-324d296f3c66?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870',
+        benefits: [
+          'Acceso 24/7 a la sala',
+          'Chat en vivo con mentores',
+          '<em>ACTUALIZACIONES DIARIAS</em>',
+          '<span class="highlight-yellow">ANÁLISIS DE MERCADO</span>',
+          '<em>SEÑALES DE TRADING</em>',
+          'Comunidad activa de traders'
+        ]
+      },
+      {
+        image: 'https://plus.unsplash.com/premium_photo-1664476845274-27c2dabdd7f0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=870',
+        benefits: [
+          '8 CLASES ADICIONALES',
+          'Temas especializados',
+          '<em>MATERIAL DESCARGABLE</em>',
+          '<span class="highlight-yellow">EJERCICIOS PRÁCTICOS</span>',
+          '<em>CERTIFICADO DE FINALIZACIÓN</em>',
+          'Actualizaciones permanentes'
+        ]
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1629339942248-45d4b10c8c2f?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=872',
+        benefits: [
+          'Llamada semanal en grupo',
+          'Duración: 60 minutos',
+          '<em>RESOLUCIÓN DE DUDAS</em>',
+          '<span class="highlight-yellow">ESTRATEGIAS RENTABLES</span>',
+          '<em>CASOS DE ÉXITO</em>',
+          'Networking con otros traders'
+        ]
+      }
+    ];
+
+    const previewImage = document.getElementById('previewImage');
+    const benefitsList = document.getElementById('benefitsList');
+    const tabs = document.querySelectorAll('.tab');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        // Remover clase active de todos los tabs
+        tabs.forEach(t => t.classList.remove('active'));
+        
+        // Agregar clase active al tab clickeado
+        tab.classList.add('active');
+        
+        // Obtener el índice del tab
+        const tabIndex = tab.getAttribute('data-tab');
+        const data = tabsData[tabIndex];
+        
+        // Actualizar imagen
+        previewImage.src = data.image;
+        
+        // Actualizar beneficios
+        benefitsList.innerHTML = data.benefits
+          .map(benefit => `<li>${benefit}</li>`)
+          .join('');
+      });
+    });
 </script>
 
 </body>
