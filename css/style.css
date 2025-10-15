@@ -430,7 +430,7 @@
     .testimonios-slider {
       display: flex;
       gap: 20px;
-      animation: scroll-left 40s linear infinite;
+      animation: scroll-left 90s linear infinite;
       width: fit-content;
     }
 
@@ -456,7 +456,7 @@
 
     /* Aplicar animación inversa a la segunda fila */
     .testimonios-grid:nth-child(2) .testimonios-slider {
-      animation: scroll-right 40s linear infinite;
+      animation: scroll-right 90s linear infinite;
     }
 
     /* Pausar animación al hover */
