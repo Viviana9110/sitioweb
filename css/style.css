@@ -660,7 +660,7 @@
     /* Ícono de Caja */
     .icon-caja {
       width: 100px;
-      height: 90px;      
+      height: 101px;      
       position: relative;
       display: flex;
       align-items: center;
@@ -669,8 +669,8 @@
 
     /* Ícono de Documento */
     .icon-documento {
-      width: 100px;
-      height: 90px;      
+      width: 83px;
+      height: 99px;      
       position: relative;
       display: flex;
       align-items: center;
@@ -679,8 +679,8 @@
 
     /* Ícono de Rosa */
     .icon-rosa {
-      width: 120px;
-      height: 100px;
+      width: 83px;
+      height: 91px;
       position: relative;
       display: flex;
       align-items: left;
@@ -804,14 +804,9 @@
       border-radius: 12px;
       padding: 30px 25px;
       text-align: left;
-      transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    .tema-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    }
-
+    
     .tema-header {
       margin-bottom: 20px;
     }
@@ -842,54 +837,121 @@
     
     /* Ícono Billete con reloj */
     .icon-daytrading {
-      width: 50px;
-      height: 50px;
+     width: 56px;
+      height: 56px; 
       position: relative;
     }
 
-
+    .billete {
+      width: 56px;
+      height: 56px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
     
+    .billete img{
+      width: 100%;
+      height: 100%;  
+    }
 
 
     /* Ícono Opciones Long */
     .icon-opciones {
-      width: 50px;
-      height: 50px;
+      width: 59px;
+      height: 56px;
       position: relative;
     }
+
+    .flecha-arriba {
+      width: 59px;
+      height: 56px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+    
+    .flecha-arriba img{
+      width: 100%;
+      height: 100%;  
+    }
+
 
     
 
     /* Ícono Gráfico */
     .icon-grafico {
-      width: 50px;
-      height: 50px;
+      width: 56px;
+      height: 49px;
       position: relative;
     }
 
+    .grafico-lineas {
+      width: 56px;
+      height: 49px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+    
+    .linea-grafico img{
+      width: 100%;
+      height: 100%;  
+    }
     
 
     /* Ícono Indicadores */
     .icon-indicadores {
-      width: 50px;
-      height: 50px;
+      width: 56px;
+      height: 56px;
       position: relative;
     }
 
+    .tema-icon {
+      width: 56px;
+      height: 56px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+    
+    .icon-indicadores img{
+      width: 100%;
+      height: 100%;  
+    }
+    
     
 
     /* Ícono Institución */
     .icon-institucion {
-      width: 50px;
-      height: 50px;
+      width: 56px;
+      height: 56px;
       position: relative;
+    }
+
+    .techo-edificio {
+      width: 56px;
+      height: 56px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+    
+    .techo-edificio img{
+      width: 100%;
+      height: 100%;  
     }
 
     
     /* Ícono Velas */
     .icon-velas {
-      width: 50px;
-      height: 50px;
+      width: 56px;
+      height: 47px;
       position: relative;
       display: flex;
       align-items: flex-end;
@@ -898,24 +960,75 @@
       padding-bottom: 5px;
     }
 
+    .icon-velas {
+      width: 56px;
+      height: 47px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+    
+    .icon-velas img{
+      width: 100%;
+      height: 100%;  
+    }
     
 
-    /* Ícono Control Riesgo */
-    .icon-riesgo {
-      width: 50px;
-      height: 50px;
+    /* Ícono Control Riesgo */  
+    
+    .tema-icon {
+      width: 56px;
+      height: 58px;
       position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 6px;
+      padding-bottom: 5px;
+    }
+
+    .icon-riesgo {
+      width: 56px;
+      height: 58px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
+    
+    .icon-riesgo img{
+      width: 100%;
+      height: 100%;  
     }
 
     
     /* Ícono Psicología */
-    .icon-psicologia {
+    .tema-ico {
       width: 50px;
-      height: 50px;
+      height: 55px;
       position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      gap: 6px;
+      padding-bottom: 5px;
     }
 
+    .icon-psicologia {
+      width: 50px;
+      height: 55px;      
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }    
     
+    .icon-psicologia img{
+      width: 100%;
+      height: 100%;  
+    }
+
 
     /* === TEXTO === */
     .tema-texto {
