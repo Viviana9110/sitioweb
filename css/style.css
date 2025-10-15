@@ -2117,4 +2117,8 @@
         height: 24px;
         font-size: 0.75rem;
       }
+
+      .check-item{
+        margin-left: 50px;
+      }
     }
